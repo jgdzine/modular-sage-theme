@@ -23,10 +23,11 @@ $header_image =  get_field('header_logo','options');
     //Load Slides
     if( have_rows('header_slider') ):
 
-        echo '<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">';
+        echo '<div id="carouselExampleControls" class="carousel slide" data-ride="carousel"><div class="carousel-inner" role="listbox">';
         $slider_height = get_field('slider_height');
         $text_color = get_field('text_color');
         // loop through the rows of data
+        $slide_number = 1;
         while ( have_rows('header_slider') ) : the_row();
 
 
@@ -39,8 +40,8 @@ $header_image =  get_field('header_logo','options');
 
             ?>
 
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active"
+
+                <div class="carousel-item <?php  echo ($slide_number == 1) ? 'active' : '';?>"
                      style="<?php echo ($slide_image) ? 'background: url('.$slide_image['url'].') no-repeat center/cover':'';?>;
                             <?php echo ($slider_height) ? 'min-height:'.$slider_height .'px' :'';?>;
                             <?php echo ($text_color) ? 'color:'.$text_color:'';?>">
@@ -54,11 +55,12 @@ $header_image =  get_field('header_logo','options');
                         </div>
                     </section>
                 </div>
-            </div>
+
             <?php
+            $slide_number++;
         endwhile;
 
-        echo '<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        echo '</div><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="sr-only">Previous</span>
                     </a>
