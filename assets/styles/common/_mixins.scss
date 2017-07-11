@@ -1,0 +1,44 @@
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+@mixin grayscale_element($value) {
+  -webkit-filter: #{"grayscale(#{$value})"};
+  -moz-filter: #{"grayscale(#{$value})"};
+  filter:#{"grayscale(#{$value})"};
+}
+
+@mixin respond-to-max($screen-size) {
+  @media all and (max-width: $screen-size) { @content; }
+}
+
+@mixin respond-between($screen-size-1, $screen-size-2) {
+  @media all and (min-width: $screen-size-1) and (max-width: $screen-size-2) { @content; }
+}
+
+@mixin respond-to-min($screen-size) {
+  @media all and (min-width: $screen-size) { @content; }
+}
+@mixin respond-to-retina() {
+  @media all and (-webkit-min-device-pixel-ratio: 2) { @content; }
+}
+
+
+
+//Use Boostrap 4 Grid Breakpoints
+//Usage: @include respond-to(md) { $styles }
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+

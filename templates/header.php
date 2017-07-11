@@ -1,12 +1,75 @@
-<header class="banner">
-  <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <nav class="nav-primary">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
-      ?>
-    </nav>
+<?php
+
+$header_image =  get_field('header_logo','options');
+?>
+
+<header class="banner clearfix">
+  <div class="container-fluid">
+      <section class="row-fluid">
+          <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="<?php echo $header_image['url'];?>" alt="<?php echo get_bloginfo('name')?>"/></a>
+          <nav class="nav-primary">
+              <?php
+              if (has_nav_menu('primary_navigation')) :
+                  wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+              endif;
+              ?>
+          </nav>
+      </section>
   </div>
 </header>
+
+<section class="header-slider">
+    <?php
+    //Load Slides
+    if( have_rows('header_slider') ):
+
+        echo '<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">';
+        $slider_height = get_field('slider_height');
+        $text_color = get_field('text_color');
+        // loop through the rows of data
+        while ( have_rows('header_slider') ) : the_row();
+
+
+
+            $slide_image = get_sub_field('slide_image');
+            $slide_title = get_sub_field('slide_title');
+            $slide_description = get_sub_field('slide_description',false);
+            $page_link = get_sub_field('page_link');
+            $button_text = get_sub_field('button_text');
+
+            ?>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active"
+                     style="<?php echo ($slide_image) ? 'background: url('.$slide_image['url'].') no-repeat center/cover':'';?>;
+                            <?php echo ($slider_height) ? 'min-height:'.$slider_height .'px' :'';?>;
+                            <?php echo ($text_color) ? 'color:'.$text_color:'';?>">
+                    <section class="container">
+                        <div class="row">
+                            <aside class="col-md-6">
+                                <h1 class="slide-title crimson-text"><?php echo $slide_title;?></h1>
+                                <h4 class="slide-description crimson-text italic"><?php echo $slide_description;?></h4>
+                                <a href="<?php echo $page_link;?>" class="btn btn-secondary"><?php echo $button_text;?></a>
+                            </aside>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <?php
+        endwhile;
+
+        echo '<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                ';
+
+    endif;
+    ?>
+</section>
+

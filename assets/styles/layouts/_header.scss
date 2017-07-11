@@ -1,0 +1,71 @@
+header.banner {
+    background-color: transparentize($brand-primary, .1);
+    padding: .6em 0;
+    position: relative;
+    z-index: 999;
+    a.brand {
+      float: left;
+    }
+    .nav-primary {
+        float: right;
+        padding: 1em 0;
+        .menu-main-container {
+            ul#menu-main {
+                li {
+                  a {
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin: 0 1.5em;
+                    text-transform: uppercase;
+                  }
+                  &:last-child {
+                      > a {
+                          margin-right: 0;
+                      }
+                  }
+              }
+            }
+        }
+    }
+}
+
+.header-slider {
+  top: -6em;
+  position: relative;
+  .carousel {
+    .carousel-inner {
+        .carousel-item {
+          padding: 7em 0 2em;
+          .slide-title {
+
+            font-weight: 400;
+            line-height: 1em;
+            @include respond-to(md){
+              font-size: 72px;
+              line-height: 1.2em;
+              margin: 1.2em 0 0.3em;
+            }
+
+          }
+          .slide-description {
+            font-weight: 400;
+            @include respond-to(md){
+              font-size: 44px;
+              margin-bottom: .9em;
+            }
+          }
+          .btn-secondary {
+              font-size: 26px;
+              font-weight: 300;
+          }
+        }
+    }
+  }
+
+  i.fa {
+    font-size: 4em;
+  }
+
+
+}

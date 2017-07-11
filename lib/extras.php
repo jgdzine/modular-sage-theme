@@ -139,12 +139,13 @@ function bidirectional_acf_update_value( $value, $post_id, $field  ) {
 
 // Render a module from the "modules" directory
 function the_module($module_name = '') {
+
     if(empty($module_name)) {
         echo 'return false';
         return false;
     }
 
-    locate_template( "templates/modules/".$module_name.".php", true, true );
+    locate_template( "templates/modules/".$module_name.".php", true, false );
 
 }
 function get_module($module_name = '') {
@@ -163,13 +164,9 @@ function the_modules_loop($modules_field = 'modules')
     // Loop through rows of flexible content field
 
     while (the_flexible_field($modules_field)) {
-
         // Render module template based on the row layout's name
         $module_name = str_replace('_', '-', get_row_layout());
         the_module($module_name);
-        var_dump($module_name);
-
-
     }
 }
 
