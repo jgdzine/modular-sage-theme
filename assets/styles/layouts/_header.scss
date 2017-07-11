@@ -9,8 +9,8 @@ header.banner {
     .nav-primary {
         float: right;
         padding: 1em 0;
-        .menu-main-container {
-            ul#menu-main {
+
+            ul.nav {
                 li {
                   a {
                     color: white;
@@ -26,7 +26,7 @@ header.banner {
                   }
               }
             }
-        }
+
     }
 }
 
