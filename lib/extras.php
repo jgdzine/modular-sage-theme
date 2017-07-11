@@ -157,17 +157,24 @@ function get_module($module_name = '') {
     ob_end_clean();
     return $html;
 }
+
 function the_modules_loop($modules_field = 'modules')
 {
     // Loop through rows of flexible content field
 
     while (the_flexible_field($modules_field)) {
+
         // Render module template based on the row layout's name
         $module_name = str_replace('_', '-', get_row_layout());
         the_module($module_name);
+        var_dump($module_name);
 
 
     }
+}
+
+function get_bs_column_class($column_count){
+
 }
 
 

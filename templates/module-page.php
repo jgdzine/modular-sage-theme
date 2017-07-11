@@ -8,6 +8,7 @@
 
     if( have_rows('modules') ) {
         // Check if ACF is enabled and the modules field exists
+
         if (function_exists('get_field') && get_field('modules') !== null) {
             Roots\Sage\Extras\the_modules_loop();
         } else {
