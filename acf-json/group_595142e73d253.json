@@ -255,15 +255,38 @@
                             "endpoint": 0
                         },
                         {
+                            "key": "field_5965913274667",
+                            "label": "Column Height",
+                            "name": "column_height",
+                            "type": "number",
+                            "instructions": "Column height in pixels (px).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 20,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "px",
+                            "min": "",
+                            "max": "",
+                            "step": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
                             "key": "field_596471806b1cb",
                             "label": "Custom Column Grid",
                             "name": "custom_column_grid",
                             "type": "true_false",
-                            "instructions": "",
+                            "instructions": "Check to manually adjust the number of grid columns per content,",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": 20,
                                 "class": "",
                                 "id": ""
                             },
@@ -416,5 +439,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499761377
+    "modified": 1499829296
 }

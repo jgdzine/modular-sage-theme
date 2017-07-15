@@ -1,0 +1,27 @@
+body.page {
+  .content {
+      main.main {
+        .section-grid-content {
+          padding: 3em 0;
+          h3.section-title {
+            color: $brand-primary;
+            font-size: 32px;
+            &:before {
+              content: "-";
+              font-size: 70px;
+              font-weight: bold;
+              top: -50%;
+            }
+          }
+          .column-grid-content {
+              .widget-title {
+                color: $brand-primary;
+                font-family: $font-family-serif;
+              }
+          }
+
+        }
+      }
+  }
+
+}

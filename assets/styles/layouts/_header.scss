@@ -31,8 +31,14 @@ header.banner {
 }
 
 .header-slider {
-  top: -6em;
-  position: relative;
+    margin-top: -6em;
+    display: inline-block;
+    width: 100%;
+  .container-fluid {
+    @include respond-to(md) {
+      width: 100%;
+    }
+  }
   .carousel {
     .carousel-inner {
         .carousel-item {

@@ -16,7 +16,8 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'lib/acf/options-page.php' // Theme customizer
+  'lib/acf/options-page.php', // Theme customizer
+  'lib/custom-queries/first-letter-query.php' // Theme customizer
 ];
 
 foreach ($sage_includes as $file) {
@@ -27,3 +28,6 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+

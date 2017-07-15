@@ -55,6 +55,12 @@
 }
 @font-face {
   font-family: CrimsonText;
+  src: url(../fonts/CrimsonText-Italic.ttf);
+  font-weight:400;
+  font-style: italic;
+}
+@font-face {
+  font-family: CrimsonText;
   src: url(../fonts/CrimsonText-Semibold.ttf);
   font-weight:600;
 }
@@ -76,10 +82,17 @@
   font-style: italic;
 }
 
+body {
+    p {
+      font-family: CrimsonText;
+    }
+}
 
 
 /* Typography Classes */
 
 .crimson-text { font-family: CrimsonText;}
 .italic { font-style: italic}
+.bold { font-weight: bold;}
 
+.font-lg { font-size: 120px;}

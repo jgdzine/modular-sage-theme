@@ -18,12 +18,12 @@ $header_image =  get_field('header_logo','options');
   </div>
 </header>
 
-<section class="header-slider">
+<section class="header-slider clearfix">
     <?php
     //Load Slides
     if( have_rows('header_slider') ):
 
-        echo '<div id="carouselExampleControls" class="carousel slide" data-ride="carousel"><div class="carousel-inner" role="listbox">';
+        echo '<div id="carouselHeader" class="carousel slide" data-ride="carousel"><div class="carousel-inner" role="listbox">';
         $slider_height = get_field('slider_height');
         $text_color = get_field('text_color');
         // loop through the rows of data
@@ -45,9 +45,9 @@ $header_image =  get_field('header_logo','options');
                      style="<?php echo ($slide_image) ? 'background: url('.$slide_image['url'].') no-repeat center/cover':'';?>;
                             <?php echo ($slider_height) ? 'min-height:'.$slider_height .'px' :'';?>;
                             <?php echo ($text_color) ? 'color:'.$text_color:'';?>">
-                    <section class="container">
-                        <div class="row">
-                            <aside class="col-md-6">
+                    <section class="container-fluid">
+                        <div class="row-fluid">
+                            <aside class="col-md-12">
                                 <h1 class="slide-title crimson-text"><?php echo $slide_title;?></h1>
                                 <h4 class="slide-description crimson-text italic"><?php echo $slide_description;?></h4>
                                 <a href="<?php echo $page_link;?>" class="btn btn-secondary"><?php echo $button_text;?></a>
@@ -60,11 +60,11 @@ $header_image =  get_field('header_logo','options');
             $slide_number++;
         endwhile;
 
-        echo '</div><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        echo '</div><a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                         <span class="sr-only">Next</span>
                     </a>
