@@ -16,8 +16,9 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'lib/acf/options-page.php', // Theme customizer
-  'lib/custom-queries/first-letter-query.php' // Theme customizer
+  'lib/shortcodes/general-shortcodes.php', // Shortcodes
+  'lib/acf/options-page.php', // ACF Options
+  'lib/custom-queries/first-letter-query.php' // First Letter Query
 ];
 
 foreach ($sage_includes as $file) {

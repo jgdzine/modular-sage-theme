@@ -3,6 +3,9 @@ body.page {
       main.main {
         .section-grid-content {
           padding: 3em 0;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
           h3.section-title {
             color: $brand-primary;
             font-size: 32px;
@@ -14,9 +17,29 @@ body.page {
             }
           }
           .column-grid-content {
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              p {
+                  font-size: 1.2rem;
+                  font-family: Helvetica,Arial, sans-serif;
+              }
+
               .widget-title {
                 color: $brand-primary;
                 font-family: $font-family-serif;
+                display: inline;
+              }
+
+              p.text-xlg {
+                display: inline;
+                font-size: 2rem
+              }
+
+              a.btn.btn-default.btn-sm {
+                display: block;
+                text-align: left;
+                width: 100%;
               }
           }
 

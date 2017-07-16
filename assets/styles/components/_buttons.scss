@@ -4,8 +4,11 @@
   letter-spacing: 1px;
 
   &.btn-default {
+      font-size: 1.2rem;
+      font-weight: 600;
       padding-left: 0;
       padding-right: 0;
+      text-transform: uppercase;
     &:after {
       content: "\f054";
       content: "\f105";
