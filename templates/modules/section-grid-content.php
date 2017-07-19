@@ -6,8 +6,13 @@
 
 
     $section_bg_image = get_sub_field('section_background_image');
+    $section_bg_color = get_sub_field('section_background_color');
     ?>
-        <section class="section-grid-content" style="<?php echo ($section_bg_image) ? 'background-image: url('.$section_bg_image['url'].');' : ''; ?>">
+        <section class="section-grid-content" style="
+        <?php
+            echo ($section_bg_image) ? 'background-image: url('.$section_bg_image['url'].');' : '';
+            echo ($section_bg_color) ? 'background-color: '.$section_bg_color.';' : '';
+        ?>">
             <?php
                 if(get_sub_field('section_title')){
                     echo  '<h3 class="section-title">'.get_sub_field('section_title').'</h3>';
