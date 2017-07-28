@@ -1,0 +1,65 @@
+ul.search-by-name-list {
+  text-align: center;
+  li {
+      font-family: $font-family-serif;
+      font-size: 36px;
+     line-height: 3em;
+      &.view-all-link {
+          a {
+              color: white;
+              font-family: $font-family-sans-serif;
+              font-weight: 300;
+              font-size: 25px;
+            &:after {
+                font-size: 25px;
+            }
+          }
+      }
+  }
+
+  @include respond-to(md) {
+      //Center Vertically
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+}
+
+ul.partners.cpt-list {
+   //Center Horizontally
+    padding: 0 0 2em;
+    width: 28em;
+    margin: auto;
+    li {
+      margin-bottom: 14px;
+        a {
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+ul.cpt-list.practice-areas {
+    @include respond-to(md) {
+      column-count: 2;
+      width: 80%;
+      padding: 0 0 2em 3em;
+    }
+    //Center Horizontally
+
+
+    margin: 5em auto 2em;
+   li {
+      border-bottom: 1px solid white;
+      width: 85%;
+     a {
+        font-weight: 600;
+        margin: 7px 0;
+        font-size: 21px;
+
+     }
+   }
+}
+
+
+

@@ -170,8 +170,15 @@ function the_modules_loop($modules_field = 'modules')
     }
 }
 
-function get_bs_column_class($column_count){
+function options_modules_loop($modules_field = 'modules')
+{
+    // Loop through rows of flexible content field
 
+    while (the_flexible_field($modules_field,'option')) {
+        // Render module template based on the row layout's name
+        $module_name = str_replace('_', '-', get_row_layout());
+        the_module($module_name);
+    }
 }
 
 

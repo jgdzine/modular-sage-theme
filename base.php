@@ -31,6 +31,7 @@ use Roots\Sage\Wrapper;
       </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php
+      get_template_part('templates/after','main-content');
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();

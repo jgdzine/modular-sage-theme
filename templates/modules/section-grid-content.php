@@ -28,8 +28,10 @@
                     while ( have_rows('column_grid_content') ) : the_row();
                         $col_bg_image = get_sub_field('column_background_image');
                         $col_bg_color = get_sub_field('column_background_color');
+                        $grid_size = get_sub_field('grid_size');
+                        $bs_column = ($grid_size) ? $grid_size : $bs_column;
 
-                        echo '<aside class="column-grid-content col-md-'.$bs_column.'" style="background-color: '.$col_bg_color.';background-image: url('. $col_bg_image['url'] .'); min-height: '.$column_height.';">';
+                        echo '<aside class="column-grid-content col-md-'.$bs_column.'" style="background-color: '.$col_bg_color.';background-image: url('. $col_bg_image['url'] .'); min-height: '.$column_height.';" >';
                             the_sub_field('column_content');
                         echo '</aside>';
                     endwhile;

@@ -1,6 +1,6 @@
 <?php
 
-$header_image =  get_field('header_logo','options');
+$header_image =  get_field('header_logo','option');
 ?>
 
 <header class="banner clearfix">

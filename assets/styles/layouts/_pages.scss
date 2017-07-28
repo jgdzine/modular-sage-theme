@@ -1,6 +1,7 @@
 body.page {
   .content {
       main.main {
+        padding-bottom: 6em;
         .section-grid-content {
           padding: 3em 0;
           background-repeat: no-repeat;
@@ -47,4 +48,68 @@ body.page {
       }
   }
 
+    .fullwidth-section-grid-content {
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-position: center center;
+        float: left;
+       width: 100%;
+
+       h3.section-title {
+         color: $brand-primary;
+         font-size: 32px;
+         &:before {
+           content: "-";
+           font-size: 70px;
+           font-weight: bold;
+           top: -50%;
+         }
+       }
+
+        .first-row {
+            margin: 0;
+        }
+       .column-grid-content {
+         max-width: 100%;
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center center;
+         p {
+           font-size: 1.2rem;
+           font-family: Helvetica,Arial, sans-serif;
+         }
+
+         .widget-title {
+           color: $brand-primary;
+           font-family: $font-family-serif;
+           display: inline;
+         }
+
+         p.text-xlg {
+           display: inline;
+           font-size: 2rem
+         }
+
+         a.btn.btn-default.btn-sm {
+           display: block;
+           text-align: left;
+           width: 100%;
+         }
+       }
+      //Practice Areas
+      &.practice-areas {
+        background-size: 50%;
+        background-position: 3em 7em;
+        padding: 1em;
+        h3.section-title {
+            color: white;
+        }
+      }
+      &.recent-patents {
+        background-position: center 2em;
+        background-size: 50%;
+      }
+
+     }
 }
+

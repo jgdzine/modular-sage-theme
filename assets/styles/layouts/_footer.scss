@@ -1,0 +1,36 @@
+body {
+  footer#page-footer {
+    .fullwidth-section-grid-content.footer-content {
+      padding: 6em 1em;
+      text-align: center;
+      @include respond-to(md) {
+        background-size: 75%;
+      }
+
+
+      h1.footer-title {
+        color: $brand-primary;
+        margin: 1rem auto;
+        @include respond-to(md) {
+          font-size: 72px;
+        }
+      }
+
+      h2.sub-title {
+        font-size: 43px;
+        color: #3b3b3b;
+      }
+
+      address {
+         color: $brand-primary;
+         font-family: $font-family-sans-serif;
+         font-size: 23px;
+      }
+      a {
+        color: $brand-primary;
+        font-family: $font-family-sans-serif;
+        font-size: 23px;
+      }
+    }
+  }
+}
