@@ -1,0 +1,77 @@
+/*
+  Sizes
+ */
+.with--text-large {
+  font-size: $font-size-body-large;
+  font-weight: 300;
+  line-height: (48/32);
+}
+
+// When used with .with--text-large it will size down to body copy on mobile
+//.with--text-large--responsive {
+//  @include media('<=lap') {
+//    font-size: $font-size-body;
+//  }
+//}
+
+.with--text-small {
+  font-size: $font-size-body-small;
+}
+
+.with--text-micro {
+  font-size: $font-size-micro;
+  line-height: (14/12);
+}
+
+.with--text-small-to-large {
+  font-size: $font-size-body-small;
+
+  //@include media('>hand') {
+  //  font-size: $font-size-body-large;
+  //  font-weight: 300;
+  //  line-height: (48/32);
+  //}
+}
+
+.with--text-tighter {
+  line-height: 1.2;
+}
+
+/*
+  Alignment
+ */
+.with--text-center { text-align: center; }
+.with--text-right  { text-align: right; }
+.with--text-left  { text-align: left; }
+
+
+/*
+  Accessibility
+ */
+.with--visually-hidden {
+ // @include visually-hidden();
+}
+
+/*
+  Styles
+ */
+.with--text-strong { font-weight: bold; }
+.with--text-semibold { font-weight: 700; }
+.with--text-italic { font-style: italic; }
+.with--text-light { font-weight: 300; }
+
+/*
+  Transform
+ */
+.with--text-uppercase{ text-transform: uppercase;}
+.with--text-fade { opacity: .5; }
+
+
+/*
+  Div Wrap for border bottom
+ */
+.sg-sub-head {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}

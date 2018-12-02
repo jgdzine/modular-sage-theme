@@ -1,0 +1,68 @@
+{
+    "key": "group_5bd6f0f18507b",
+    "title": "Reset Member Data",
+    "fields": [
+        {
+            "key": "field_5bd6f1041c268",
+            "label": "Reset previous season Data",
+            "name": "reset_previous_season_data",
+            "type": "true_false",
+            "instructions": "This Button Will Reset Ed White points and Archive events for the previous season. You Must update this page for this action to take effect.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Delete Data",
+            "ui_off_text": "Keep Data"
+        },
+        {
+            "key": "field_5bf1d05e02092",
+            "label": "Track Ed Points and Participation from this date",
+            "name": "reset_ed_white_participation_date",
+            "type": "date_time_picker",
+            "instructions": "Select now If the current date and time is correct or select a day in the future",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5bd6f1041c268",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y g:i a",
+            "return_format": "y-m-d H:i",
+            "first_day": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-sign-up-renew"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1542573847
+}

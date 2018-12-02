@@ -1,0 +1,57 @@
+/**
+ *
+ * Color Helpers
+ *
+ *   These can be utilized by options in the CMS to change colors. Or for most
+ *   cases when text or a background needs a color these helpers can handle
+ *   that job without needing to re-write these styles across many
+ *   different objects.
+ *
+ */
+
+ .with--text-white { color: $color-white; }
+ .with--text-black { color: $color-black; }
+ 
+ .with--text-dark-green { color: $color-dark-green; }
+ .with--text-green { color: $color-green; }
+ .with--text-light-green { color: $color-light-green; }
+ 
+ .with--text-light-grey { color: $color-light-grey; }
+ .with--text-lighter-grey { color: $color-lighter-grey; }
+ 
+ .with--text-grey { color: $color-grey; }
+ 
+ .with--text-dark-grey { color: $color-dark-grey; }
+ .with--text-darker-grey { color: $color-darker-grey; }
+
+
+.with--bg-white { background-color: $color-white; }
+.with--bg-black { background-color: $color-black; }
+
+.with--bg-dark-green { background-color: $color-dark-green; }
+.with--bg-green { background-color: $color-green; }
+.with--bg-light-green { background-color: $color-light-green; }
+
+.with--bg-light-grey { background-color: $color-light-grey; }
+.with--bg-lighter-grey { background-color: $color-lighter-grey; }
+
+.with--bg-grey { background-color: $color-grey; }
+
+.with--bg-dark-grey { background-color: $color-dark-grey; }
+.with--bg-darker-grey { background-color: $color-darker-grey; }
+
+
+ .with--svg-white {
+  svg path{
+   fill : #FFF;
+  }
+ }
+.with--bg-textured {
+    background: url('../images/texture-light-grey.png') no-repeat $color-light-grey bottom right;
+    background-size: cover;
+
+    &.druva-table {
+        background-size: contain;
+        background-position-y: top;
+    }
+}

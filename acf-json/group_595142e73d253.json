@@ -24,9 +24,9 @@
                     "sub_fields": [
                         {
                             "key": "field_596015a12ac7d",
-                            "label": "Background img",
-                            "name": "background_img",
-                            "type": "image",
+                            "label": "Hero",
+                            "name": "hero",
+                            "type": "clone",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -35,23 +35,268 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
+                            "clone": [
+                                "group_5a8c953e9d5bb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5bef438d72746": {
+                    "key": "5bef438d72746",
+                    "name": "renew_now",
+                    "label": "Renew Now",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bef438d72747",
+                            "label": "Renew Now",
+                            "name": "renew_now",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bef432543590"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5bc5ee20f2b01": {
+                    "key": "layout_5bc5ee20f2b01",
+                    "name": "two_up",
+                    "label": "Two Up",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bc5ee2af2b02",
+                            "label": "Two up",
+                            "name": "two_up",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bac13c11fcb4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5bac1926093ac": {
+                    "key": "5bac1926093ac",
+                    "name": "slider",
+                    "label": "Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bac1926093ad",
+                            "label": "Slider",
+                            "name": "slider",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_59648ab7582ce"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5bd60a1fefee7": {
+                    "key": "5bd60a1fefee7",
+                    "name": "shortcode",
+                    "label": "Shortcode",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bd60a1fefee8",
+                            "label": "Shortcode",
+                            "name": "shortcode",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bd609aa383e3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5bbf9da91fffe": {
+                    "key": "5bbf9da91fffe",
+                    "name": "two_up_calendar",
+                    "label": "Two Up Calendar",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bbf9dcf20000",
+                            "label": "Two Up Calendar",
+                            "name": "two_up_calendar",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bbf9ad5cf5ac"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5be0fa3c23aef": {
+                    "key": "5be0fa3c23aef",
+                    "name": "user_ed_white_points",
+                    "label": "User Ed White Points",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5be0fa3c23af0",
+                            "label": "User Ed White Points",
+                            "name": "user_ed_white_points",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5be0f9d75ae85"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5be0fbe3707b9": {
+                    "key": "5be0fbe3707b9",
+                    "name": "ed_white_points",
+                    "label": "Ed White Points",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5be0fbe3707ba",
+                            "label": "Ed White Points",
+                            "name": "ed_white_points",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bd4be1d88563"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5beb287a64422": {
+                    "key": "5beb287a64422",
+                    "name": "current_participation",
+                    "label": "Currnet Participation",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5beb287a64423",
+                            "label": "Currnet Participation",
+                            "name": "current_participation",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5beb25cb6b9a4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
                         }
                     ],
                     "min": "",
                     "max": ""
                 }
             },
-            "button_label": "Add Row",
+            "button_label": "Add New Section",
             "min": "",
             "max": ""
         }
@@ -59,19 +304,28 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page",
                 "operator": "==",
-                "value": "page"
+                "value": "2509"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page.php"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1499475262
+    "modified": 1542587843
 }

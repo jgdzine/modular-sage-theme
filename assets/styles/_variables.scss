@@ -41,7 +41,7 @@ $color-green:          #537a53;
 $color-light-green:    #068a3d;
 
 $color-light-grey:     #b2b6b2;
-$color-lighter-grey:   #e2e2e2;
+$color-lighter-grey:   #f3f3f3;
 
 $color-grey:           #797c79;
 
@@ -60,13 +60,16 @@ $brand-clr: $color-light-green; // orange
 $shadow-clr: $color-darker-grey; // slate
 $neutral-clr: $color-grey; // gray
 
-$body-text-clr: $shadow-clr;
+$body-text-clr: $color-dark-grey;
 
-//Typography
-$primary-font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+/**
+ * Typography
+ */
+// Fonts
+$font-heading: "Arial Black", Gadget, sans-serif;
+$font-body: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $secondary-font: Arial, Helvetica, sans-serif;
-$tertiary-font: "Arial Black", Gadget, sans-serif;
-
 
 
 /**

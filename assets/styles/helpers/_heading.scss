@@ -1,0 +1,83 @@
+/**
+ *
+ * Headings
+ *
+ */
+
+.heading {
+  font-family: $font-heading;
+
+}
+
+.heading--1 {
+  line-height: (138/132);
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 15px;
+
+  @include media('>hand') {
+    font-size: 56px;
+    font-weight: bold;
+  }
+
+  @include media('>lap') {
+    font-size: 56px;
+    font-weight: bold;
+  }
+
+  @media ('max-height: 900px') and ('min-width: #{map-get($breakpoints, 'hand')}') {
+    font-size: 56px;
+    font-weight: bold;
+  }
+}
+
+.heading--2 {
+  font-size: 42px;
+  line-height: (110/100);
+  font-weight: bold;
+
+  @include media('>lap') {
+    font-size: 56px;
+  }
+
+  @include media('>hand') {
+    font-size: 56px;
+  }
+}
+
+.heading--3 {
+  font-family: $font-body;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: (74/72);
+
+  @include media('>hand') {
+    font-size: 72px;
+  }
+}
+
+.heading--4 {
+  font-family: $font-body;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: (62/60);
+
+  @include media('>hand') {
+    font-size: 42px;
+  }
+}
+
+.heading--5 {
+  font-family: $font-body;
+  font-size: 32px;
+  line-height: (28/18);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.heading--6 {
+  font-family: $font-body;
+  font-size: 32px;
+  line-height: (28/22);
+  font-weight: bold;
+}

@@ -24,11 +24,19 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_theme_support#Title_Tag
   add_theme_support('title-tag');
 
+    // Custom Navigation Walker
+    require_once('walkers/class-wp-bootstrap-navwalker.php');
+
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage')
   ]);
+
+
+  // Custom Logo
+  require('inc/logo-theme-customizer.php');
+
 
   // Enable post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails

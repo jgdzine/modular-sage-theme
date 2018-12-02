@@ -1,19 +1,60 @@
-@import "common/variables";
+@import "variables";
+@import 'mixins';
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
+/**
+ * Vendor
+ */
+@import 'vendor/include-media';
+@import 'vendor/fontawesome';
+
+/**
+ * Common
+ */
 @import "common/global";
 @import "components/buttons";
+
+/**
+ * Components
+ */
+
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
 @import "components/wp-classes";
+
+
+/**
+ * Layout
+ */
+
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "layouts/stack";
+@import "layouts/island";
+
+
+/**
+ * Helpers
+ */
+
+@import 'helpers/text';
+@import 'helpers/colors';
+//@import 'helpers/animate';
+@import 'helpers/heading';
+
+/**
+ * Helpers
+ */
+@import "modules/two-colum-calendar";
+@import "modules/slider";
+
+@import "layouts/overrides";
